@@ -1,0 +1,66 @@
+<html>
+ <head>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="..\..\stemaApp.css">
+  <link rel="stylesheet" type="text/css" href="..\login.css">
+  <script type="text/javascript" src="..\..\stemaApp.js"> </script>
+  <script type="text/javascript" src="..\login.js"> </script>
+
+ </head>
+<body>
+  <table width="500px" class="center" cellspacing="0">
+      <tr class="scolor">
+  <td width="1px">
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn" width="100%" height="100%">
+          <img src="../../burger-menu.png" width="50px" height="35px" class="bar">
+        </button>
+
+      <div id="myDropdown" class="dropdown-content">
+        <img src="../../menuIcons/immage.png" width="170px" height="170px" class="icenter" >
+        <hr color="black" class="hrsmenu">
+        <a href="../../stemaApp.php"> <img src="../../menuIcons/home.png" class="ico"> &nbsp;&nbsp; Home</a>
+        <hr color="black" class="hrsmenu">
+        <a href="../login.html"> <img src="../../menuIcons/log-in.png" class="ico"> &nbsp;&nbsp; Log In</a>
+        <hr color="black" class="hrsmenu">
+        <a href="../../nutrifacts/nutrifacts.html"> <img src="../../menuIcons/nutritional-fact.png" class="ico"> &nbsp;&nbsp; Nutritional Facts</a>
+        <hr color="black" class="hrsmenu">
+        <a href="../../allergies/allergies.php"> <img src="../../menuIcons/allergies.png" class="ico"> &nbsp;&nbsp; Allergies</a>
+        <hr color="black" class="hrsmenu">
+        <a href="../../Additives/additives.html"> <img src="../../menuIcons/Additives.png" class="ico"> &nbsp;&nbsp; Additives</a>
+        <hr color="black" class="hrsmenu">
+        <a href="#"> <img src="../../menuIcons/info.png" class="ico"> &nbsp;&nbsp; Info</a>
+        <hr color="black" class="hrsmenu">
+
+      </div>
+    </div>
+  </td>
+    <td height="50px">
+      <p v-align="center" style="font-size:26px;"> &ensp;&emsp;&emsp; &emsp;<b>Forget Password </b></p>
+    </td>
+  </tr>
+  <tr height="60px"> <td> </td> </tr>
+  </table>
+
+
+  <table width="500px" class="center">
+    <tr>
+      <td>
+      <br>
+    <form action="../login.html" method="post">
+        <div class="container">
+    <label for="email" style="font-size:20px;"><b> Email: </b></label>
+    <input type="text" placeholder="Enter your email to reset your password" name="email" required>
+    <br><br>
+    <button type="submit"  class="button"> Submit </button>
+    <br>
+  </div>
+  </form>
+  </td>
+  </tr>
+    </table>
+
+
+  </body>
+  </html>
