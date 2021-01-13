@@ -1,0 +1,152 @@
+
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+
+}
+
+
+.dropdown {
+  position: relative;
+   border-radius: 4px;
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  background-image: linear-gradient(to right, #199564, #f8d568);
+  opacity: 95%;
+  min-width: 280px;
+  min-height: 730px;
+  box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.5);
+  z-index: 1;
+  overflow:auto;
+
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  font-size: 24px;
+font-weight: bold;
+font-family: Arial;
+font-style: italic;
+
+}
+
+
+/* .dropdown-content a:hover {background-color: #ddd} */
+
+
+.show {display:block;}
+
+
+.bar {
+  margin: 7px;
+}
+
+
+.hb{
+outline: none;
+}
+
+table.center {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: auto;
+
+  }
+
+input {
+       border-style: hidden;
+
+     }
+
+.scolor{
+background-image: linear-gradient(to right, #199564, #f8d568 , #FF4500);
+
+}
+
+.icenter{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icenter2{
+  display: block;
+  margin: 15px auto;
+}
+
+::-webkit-input-placeholder {
+   font-size: 22px;
+}
+
+#wide{
+position: relative;
+height : 100%;
+ width:100%;
+
+}
+
+button{
+  padding: 0px;
+}
+
+video {
+    background: #222;
+    margin: 0 0 20px 0;
+    width: 80%;
+}
+select{
+  width: 150px;
+}
+.ico{
+  width: 30px;
+  height: 30px;
+}
+
+.hrsmenu{
+  height: 1%;
+  width: 255px;
+}
+
+.dicenter{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#searchinput{
+  color: #E7440F;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 7px;
+}
+.subtitle{
+  text-align: center;
+  color: #E7440F;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 15px 0px;
+}
+.ullist{
+list-style: square inside url("bc.png");
+line-height: 20px;
+}
+.info{
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px 0px;
+}
