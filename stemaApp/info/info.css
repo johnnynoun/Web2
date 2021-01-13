@@ -1,0 +1,14 @@
+.small-ttl{
+    text-align: center;
+    border-bottom: 2px solid gray;
+}
+
+.info-stema{
+    padding: 0 20px;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.info-div{
+    margin-bottom: 25px;
+}
