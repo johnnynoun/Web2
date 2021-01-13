@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="..\stemaApp.css" />
+    <link rel="stylesheet" type="text/css" href="myProfile.css" />
+    <script type="text/javascript" src="..\stemaApp.js"></script>
+    <script type="text/javascript" src="myProfile.js"></script>
+
+  </head>
+  <body>
+    <table width="500px" class="center" cellspacing="0">
+      <tr class="scolor">
+        <td width="1px">
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn" width="100%" height="100%">
+                <img src="../burger-menu.png" width="50px" height="35px" class="bar">
+            </button>
+
+            <div id="myDropdown" class="dropdown-content">
+              <img src="../menuIcons/immage.png" width="170px" height="170px" class="icenter" >
+              <hr color="black" class="hrsmenu">
+              <a href="../stemaApp.php"> <img src="../menuIcons/home.png" class="ico"> &nbsp;&nbsp; Home</a>
+              <hr color="black" class="hrsmenu">
+              <a href="../nutrifacts/nutrifacts.html"> <img src="../menuIcons/nutritional-fact.png" class="ico"> &nbsp;&nbsp; Nutritional Facts</a>
+              <hr color="black" class="hrsmenu">
+              <a href="../allergies/allergies.php"> <img src="../menuIcons/allergies.png" class="ico"> &nbsp;&nbsp; Allergies</a>
+              <hr color="black" class="hrsmenu">
+              <a href="../Additives/additives.html"> <img src="../menuIcons/Additives.png" class="ico"> &nbsp;&nbsp; Additives</a>
+              <hr color="black" class="hrsmenu">
+              <a href="#"> <img src="../menuIcons/log-in.png" class="ico"> &nbsp;&nbsp; Log out</a>
+              <hr color="black" class="hrsmenu">
+              <a href="#"> <img src="../menuIcons/my-favorites.png" class="ico"> &nbsp;&nbsp; My Favorites</a>
+              <hr color="black" class="hrsmenu">
+              <a href="#"> <img src="../menuIcons/history.png" class="ico"> &nbsp;&nbsp; History</a>
+              <hr color="black" class="hrsmenu">
+              <a href="../info/info.html"> <img src="../menuIcons/info.png" class="ico"> &nbsp;&nbsp; Info</a>
+              <hr color="black" class="hrsmenu">
+
+            </div>
+          </div>
+        </td>
+        <td height="50px">
+          <p v-align="center" style="font-size: 26px;">
+            &ensp;&emsp;&emsp;&emsp; &emsp; <b> My Profile </b>  &ensp;&emsp;&emsp;&emsp; &emsp;
+          </p>
+        </td>
+      </tr>
+      <tr height="60px">
+        <td></td>
+      </tr>
+    </table>
+
+    <div class="container">
+      <table width="500px" class="center">
+        <tr>
+          <img src="nopic.png" width="150px" height="150px" class="icenter">
+          <br> <br>
+        </tr>
+
+        <tr class="grid">
+          <td class="grid">
+            <label for="username"><b>Username: </b></label>
+          </td>
+          <td class="grid">test <br> <br> </td>
+        </tr>
+        <tr class="grid">
+          <td class="grid">
+            <label for="phone"><b>Phone: </b></label>
+          </td>
+          <td class="grid">0598345<br> <br> </td>
+        </tr>
+        <tr class="grid">
+          <td class="grid">
+            <label for="email"><b>Email: </b></label>
+          </td>
+          <td class="grid">heloo@lol.cd<br> <br> </td>
+        </tr>
+        <tr class="grid">
+          <td class="grid">
+            <label for="old password"><b>Old password: </b></label>
+          </td>
+          <td class="grid">hibye<br> <br> </td>
+        </tr>
+        <tr class="grid">
+          <td class="grid">
+            <label for="new password"><b>New password: </b></label>
+          </td>
+          <form method="post">
+          <td class="pass grid">
+            <input class="size"  type="password"  placeholder="New password"  name="new_password" id="np" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+          </td>
+        </tr>
+        <tr class="grid">
+          <td class="grid">
+            <label for="confirm"><b>Confirm password: </b></label>
+          </td>
+          <td class="pass grid">
+            <input  class="size"  type="password"  placeholder="Confirm password"  name="confirm" id="cf" >
+          </td>
+        </tr>
+
+        <div>
+          <tr>
+            <td colspan="2">
+              <div>
+                <button type="submit" class="button"value="submit" onclick="return Validate()">Save</button>
+              </div>
+            </form>
+            </td>
+          </tr>
+        </div>
+      </table>
+    </div>
+  </body>
+</html>
