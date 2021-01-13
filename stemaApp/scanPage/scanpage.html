@@ -1,0 +1,154 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="..\stemaApp.css">
+    <script type="text/javascript" src="..\stemaApp.js"> </script>
+
+    <meta charset="utf-8">
+    <meta name="author" content="ZXing for JS">
+
+  </head>
+
+  <body>
+<table width="500px" class="center" cellspacing="0">
+  <tr class="scolor">
+    <td>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn" width="100%" height="100%">
+          <img src="../burger-menu.png" width="50px" height="35px" class="bar">
+          </button>
+
+        <div id="myDropdown" class="dropdown-content">
+          <img src="../menuIcons/immage.png" width="170px" height="170px" class="icenter" >
+          <hr color="black" class="hrsmenu">
+          <a href="../stemaApp.php"> <img src="../menuIcons/home.png" class="ico"> &nbsp;&nbsp;Home</a>
+          <hr color="black" class="hrsmenu">
+          <a href="../login/login.html"> <img src="../menuIcons/log-in.png" class="ico"> &nbsp;&nbsp;Log In</a>
+          <hr color="black" class="hrsmenu">
+          <a href="../nutrifacts/nutrifacts.html"> <img src="../menuIcons/nutritional-fact.png" class="ico"> &nbsp;&nbsp;Nutritional Facts</a>
+          <hr color="black" class="hrsmenu">
+          <a href="../allergies/allergies.php"> <img src="../menuIcons/allergies.png" class="ico"> &nbsp;&nbsp;Allergies</a>
+          <hr color="black" class="hrsmenu">
+          <a href="../Additives/additives.html"> <img src="../menuIcons/Additives.png" class="ico"> &nbsp;&nbsp;Additives</a>
+          <hr color="black" class="hrsmenu">
+          <a href="#"> <img src="../menuIcons/info.png" class="ico"> &nbsp;&nbsp;Info</a>
+          <hr color="black" class="hrsmenu">
+        </div>
+      </div>
+
+  </td>
+  <td height="50px">
+      <h2>&ensp; &ensp; &ensp;&ensp; &ensp; Scan Page </h2>
+  </td>
+  </tr>
+<tr>
+<tr> <td  colspan="2">  <br></td> </tr>
+  <td  colspan="2">
+    <p align="middle" >Barcode exemple down here ...  <br>
+<img src="barcode.png" class="icenter" width="244" height="116" alt="Barcode example" title="Barcode"> </p>
+  </td>
+</tr>
+
+</table>
+<hr color="FF7500" width="496px">
+
+<table width="500px" class="center">
+    <tr>
+      <td>
+        <br>
+      <div align="center" style="border:solid 2px; border-color:#bbbbbb;">
+          <main class="wrapper" style="padding-top:1em">
+
+            <section class="container" id="demo-content">
+              <h1 class="title">Scan 1D/2D Code from Video Camera</h1>
+                <b>OR </b><br><br>
+              <b>Select image in BMP, GIF, JPEG, PNG, TIFF format:</b> <br><br>
+               <input type="file" accept="image/*;capture=camera" style="font-size:14px;height:32px;width:50%;">
+
+              <div>
+                <a class="button" id="startButton"><button class="button" id="startButton" style="background-color: orange"> Start </button></a>
+                &nbsp; &nbsp; &nbsp;
+                <a class="button" id="resetButton" ><button class="button" id="startButton" style="background-color: orange"> Reset </button></a>
+              </div>
+
+              <div>
+                <video id="video" width="300" height="200" style="border: 1px solid gray"></video>
+              </div>
+
+              <div id="sourceSelectPanel" style="display:none">
+                <label for="sourceSelect">Change video source:</label>
+                <select id="sourceSelect" style="max-width:400px">
+                </select>
+              </div>
+
+
+                  <label>Result:</label>
+                 <pre><code id="result" ></code></pre>
+                   <a href="javascript:history.go(-1)" onclick="">
+                  <button class="button" id="startButton" style="background-color: green"> Done</button>
+                </a>
+
+
+          </main>
+
+          <script type="text/javascript" src="https://unpkg.com/@zxing/library@latest"></script>
+          <script type="text/javascript">
+            window.addEventListener('load', function () {
+              let selectedDeviceId;
+              const codeReader = new ZXing.BrowserMultiFormatReader()
+              console.log('ZXing code reader initialized')
+              codeReader.listVideoInputDevices()
+                .then((videoInputDevices) => {
+                  const sourceSelect = document.getElementById('sourceSelect')
+                  selectedDeviceId = videoInputDevices[0].deviceId
+                  if (videoInputDevices.length >= 1) {
+                    videoInputDevices.forEach((element) => {
+                      const sourceOption = document.createElement('option')
+                      sourceOption.text = element.label
+                      sourceOption.value = element.deviceId
+                      sourceSelect.appendChild(sourceOption)
+                    })
+
+                    sourceSelect.onchange = () => {
+                      selectedDeviceId = sourceSelect.value;
+                    };
+
+                    const sourceSelectPanel = document.getElementById('sourceSelectPanel')
+                    sourceSelectPanel.style.display = 'block'
+                  }
+
+                  document.getElementById('startButton').addEventListener('click', () => {
+                    codeReader.decodeFromVideoDevice(selectedDeviceId, 'video', (result, err) => {
+                      if (result) {
+                        console.log(result)
+                        document.getElementById('result').textContent = result.text
+                      }
+                      if (err && !(err instanceof ZXing.NotFoundException)) {
+                        console.error(err)
+                        document.getElementById('result').textContent = err
+                      }
+                    })
+                    console.log(`Started continous decode from camera with id ${selectedDeviceId}`)
+                  })
+
+                  document.getElementById('resetButton').addEventListener('click', () => {
+                    codeReader.reset()
+                    document.getElementById('result').textContent = '';
+                    console.log('Reset.')
+                  })
+
+                })
+                .catch((err) => {
+                  console.error(err)
+                })
+            })
+
+
+          </script>
+
+      </td>
+</tr>
+</table>
+
+  </body>
+</html>
