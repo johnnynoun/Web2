@@ -1,0 +1,606 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="..\stemaApp.css" />
+    <link rel="stylesheet" type="text/css" href="facts.css" />
+    <script type="text/javascript" src="..\stemaApp.js"></script>
+    <script type="text/javascript" src="nutrifacts.js"></script>
+
+
+  </head>
+  <body>
+    <table width="500px" class="center" cellspacing="0">
+      <tr class="scolor">
+        <td width="1px">
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn" width="100%" height="100%">
+              <img src="../burger-menu.png" width="50px" height="35px" class="bar">
+            </button>
+
+            <div id="myDropdown" class="dropdown-content">
+              <img src="../menuIcons/immage.png" width="170px" height="170px" class="icenter" >
+              <hr color="black" class="hrsmenu">
+              <a href="../stemaApp.php"> <img src="../menuIcons/home.png" class="ico"> &nbsp;&nbsp; Home</a>
+              <hr color="black" class="hrsmenu">
+              <a href="../login/login.html"> <img src="../menuIcons/log-in.png" class="ico"> &nbsp;&nbsp; Log In</a>
+              <hr color="black" class="hrsmenu">
+              <a href="../my profile/myProfile.html"> <img src="../menuIcons/profile.png" class="ico"> &nbsp;&nbsp; My Profile</a>
+              <hr color="black" class="hrsmenu">
+              <a href="../allergies/allergies.php"> <img src="../menuIcons/allergies.png" class="ico"> &nbsp;&nbsp; Allergies</a>
+              <hr color="black" class="hrsmenu">
+              <a href="../Additives/additives.html"> <img src="../menuIcons/Additives.png" class="ico"> &nbsp;&nbsp; Additives</a>
+              <hr color="black" class="hrsmenu">
+              <a href="#"> <img src="../menuIcons/my-favorites.png" class="ico"> &nbsp;&nbsp; My Favorites</a>
+              <hr color="black" class="hrsmenu">
+              <a href="#"> <img src="../menuIcons/history.png" class="ico"> &nbsp;&nbsp; History</a>
+              <hr color="black" class="hrsmenu">
+              <a href="../info/info.html"> <img src="../menuIcons/info.png" class="ico"> &nbsp;&nbsp; Info</a>
+              <hr color="black" class="hrsmenu">
+
+            </div>
+          </div>
+        </td>
+        <td height="50px">
+          <p v-align="center" style="font-size: 26px;">
+            &ensp;&emsp;&emsp; &emsp;<b>Nutritional Facts </b>
+          </p>
+        </td>
+      </tr>
+      <tr height="60px">
+        <td></td>
+      </tr>
+    </table>
+    <table width="500px" class="center">
+      <tr>
+        <td>
+          <form action="#" method="POST" class="center">
+            <div class="container center">
+              <div>
+                <button id="btnScrollToTop">
+                  <img src="../arrow_up.png" alt="">
+                </button>
+
+                <div class="button-container">
+                  <button class="alph"><a href="#A">A</a></button>
+                  <button class="alph"><a href="#B">B</a></button>
+                  <button class="alph"><a href="#C">C</a></button>
+                  <button class="alph"><a href="#D">D</a></button>
+                  <button class="alph"><a href="#E">E</a></button>
+                  <button class="alph"><a href="#F">F</a></button>
+                  <button class="alph"><a href="#G">G</a></button>
+                  <button class="alph"><a href="#H">H</a></button>
+                  <button class="alph">I</a></button>
+                  <button class="alph"><a href="#J">J</a></button>
+                  <button class="alph"><a href="#K">K</a></button>
+                  <button class="alph"><a href="#L">L</a></button>
+                  <button class="alph"><a href="#M">M</a></button>
+                  <button class="alph"><a href="#N">N</a></button>
+                  <button class="alph"><a href="#O">O</a></button>
+                  <button class="alph"><a href="#P">P</a></button>
+                  <button class="alph"><a href="#Q">Q</a></button>
+                  <button class="alph"><a href="#R">R</a></button>
+                  <button class="alph"><a href="#S">S</a></button>
+                  <button class="alph"><a href="#T">T</a></button>
+                  <button class="alph"><a href="#U">U</a></button>
+                  <button class="alph"><a href="#V">V</a></button>
+                  <button class="alph"><a href="#W">W</a></button>
+                  <button class="alph"><a href="#X">X</a></button>
+                  <button class="alph"><a href="#Y">Y</a></button>
+                  <button class="alph"><a href="#Z">Z</a></button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <ol>
+            <li>
+              <BR id="A">
+              <h2>A</h2>
+              <dl>
+                <dt><h4>Apple: 100 g</h4></dt>
+                <img src="images/apple.png" alt="" id="img" >
+                <dd>Calories: 52 kcal </br>
+                    Water: 86 g </br>
+                    Protein: 0.3 g </br>
+                    Carbs: 13.8 g </br>
+                    Sugar: 10.4 g </br>
+                    Fiber: 2.4 g </br>
+                    Fat: 0.2 g</dd>
+              </dl>
+              <hr>
+              <dl>
+                <dt><h4>Avocado: 100 g</h4></dt>
+                <img src="images/avocado.png" alt="" id="img">
+                <dd>Calories: 160 kcal</br>
+                    Water: 73.2 g </br>
+                    Protein: 2 g </br>
+                    Carbs: 8.5 g </br>
+                    Sugar: 0.6 g </br>
+                    Fiber: 6.7 g </br>
+                    Fat: 14.6 g</dd>
+              </dl>
+              <hr>
+              <dl>
+                <dt><h4>Apricot: 100g(dried)</h4></dt>
+                <img src="images/apricot.png" alt="" id="img">
+                <dd>Calories: 241 kcal</br>
+                    Protein: 3.4 g </br>
+                    Carbs: 63 g </br>
+                    Sugar:53 g </br>
+                    Fiber:7 g </br>
+                    Fat: 0.5 g</dd>
+              </dl>
+              <hr>
+              <dl>
+                <dt><h4>Almond: 100g</h4></dt>
+                <img src="images/almod.png" alt="" id="img">
+                <dd>Calories: 579 kcal</br>
+                    Water: 4.4 g </br>
+                    Protein: 21.2 g </br>
+                    Carbs: 21.6 g </br>
+                    Sugar: 4.4 g </br>
+                    Fiber: 12.5 g </br>
+                    Fat: 50 g</dd>
+              </dl>
+              <hr>
+            </li>
+            <li>
+              <br id="B">
+              <h2>B</h2>
+                <dl>
+                    <dt><h4>Banana: 100 g</h4></dt>
+                    <img src="images/banana.png" alt="" id="img">
+                    <dd>Calories: 89 kcal </br>
+                        Water: 75 g </br>
+                        Protein: 1 g </br>
+                        Carbs: 22.8 g </br>
+                        Sugar: 12.2 g </br>
+                        Fiber: 2.6 g </br>
+                        Fat: 0.3 g</dd>
+                  </dl>
+                  <hr>
+                  <dl>
+                    <dt><h4>Blueberry: 100 g</h4></dt>
+                    <img src="images/blueberry.png" alt="" id="img">
+                    <dd>Calories: 57 kcal </br>
+                        Water: 84 g </br>
+                        Protein: 0.7 g </br>
+                        Carbs: 14.5 g </br>
+                        Sugar: 10 g </br>
+                        Fiber: 2.4 g </br>
+                        Fat: 0.3 g</dd>
+                  </dl>
+                  <hr>
+            </li>
+            <li>
+              <br id="C">
+              <h2>C</h2>
+                <dl>
+                  <dt><h4>Cherry: 100 g</h4></dt>
+                  <img src="images/Acerola.jpg" alt="" id="img">
+                  <dd>Calories: 50 kcal </br>
+                  Water: 86 g </br>
+                  Protein: 1 g </br>
+                  Carbs: 12.2 g </br>
+                  Sugar: 8.5 g </br>
+                  Fiber: 1.6 g </br>
+                  Fat: 0.3 g</dd>
+                </dl>
+                <hr>
+                <dl>
+                <dt><h4>Cantaloupe: 100 g</h4></dt>
+                <img src="images/cantaloupe.png" alt="" id="img">
+                <dd>Calories: 34 kcal </br>
+                  Water: 90.2 g </br>
+                  Protein: 0.8 g </br>
+                  Carbs: 8.1 g </br>
+                  Sugar: 7.9 g </br>
+                  Fiber: 1 g </br>
+                  Fat: 0.2 g</dd>
+                </dl>
+                <hr>
+                <dl>
+                  <dt><h4>Clementine: 100 g</h4></dt>
+                  <img src="images/Clemantine.jpg" alt="" id="img">
+                  <dd>Calories: 47 kcal </br>
+                  Water: 87 g </br>
+                  Protein: 0.85 g </br>
+                  Carbs: 12 g </br>
+                  Sugar: 9.2 g </br>
+                  Fiber: 1.7 g </br>
+                  Fat: 0.1 g</dd>
+            </dl>
+            <hr>
+            <dl>
+              <dt><h4>Cucumber: 100 g</h4></dt>
+              <img src="images/Cucumber.png" alt="" id="img">
+              <dd>Calories: 16 kcal </br>
+                Water: 95 g </br>
+                Protein: 0.6 g </br>
+                Carbs: 3.6 g </br>
+                Sugar: 1.7 g </br>
+                Fiber: 0.5 g </br>
+                Fat: 0.1 g</dd>
+            </dl>
+            <hr>
+          </li>
+      <li>
+        <br id="D">
+        <h2>D</h2>
+          <dl>
+            <dt><h4>Dates: 100 g</h4></dt>
+            <img src="images/dates.png" alt="" id="img">
+            <dd>Calories: 282 kcal </br>
+                Water: 20.5 g </br>
+                Protein: 2.4 g </br>
+                Carbs: 75 g </br>
+                Sugar: 63 g </br>
+                Fiber: 8 g </br>
+                Fat: 0.4 g</dd>
+          </dl>
+          <hr>
+          <dl>
+            <dt><h4>Dragon Fruit: 100 g</h4></dt>
+            <img src="images/dragon.png" alt="" id="img">
+            <dd>Calories: 250 kcal </br>
+                Protein: 3.6 g </br>
+                Carbs: 82 g </br>
+                Sugar: 82 g </br>
+                Fiber: 1.8 g </br>
+                </dd>
+          </dl>
+          <hr>
+    </li>
+    <li>
+      <br id="E">
+      <h2>E</h2>
+      <dl>
+          <dt><h4>Elderberry: 100 g</h4></dt>
+          <img src="images/elder.png" alt="" id="img">
+          <dd>Calories: 73 kcal </br>
+              Water: 80 g </br>
+              Protein: 0.6 g </br>
+              Carbs: 18.4 g </br>
+              Fiber: 7 g </br>
+              Fat: 0.5 g</dd>
+        </dl>
+        <hr>
+        <dl>
+          <dt><h4>Eggfruit: 100 g</h4></dt>
+          <img src="images/egg fruit.jpg" alt="" id="img">
+          <dd>Calories: 138 kcal </br>
+              Protein: 2.5 g </br>
+              Carbs: 36.7 g </br>
+              Fiber: 0.1 g </br>
+              Fat: 0.1 g</dd>
+        </dl>
+        <hr>
+  </li>
+  <li>
+    <br id="F">
+    <h2>F</h2>
+    <dl>
+        <dt><h4>Fig: 100 g</h4></dt>
+        <img src="images/fig.jpg" alt="" id="img">
+        <dd>Calories: 74 kcal </br>
+            Water: 79 g </br>
+            Protein: 0.8 g </br>
+            Carbs: 19.2 g </br>
+            Sugar: 16.3 g </br>
+            Fiber: 3 g </br>
+            Fat: 0.3 g</dd>
+      </dl>
+      <hr>
+</li>
+<li>
+  <br id="G">
+  <h2>G</h2>
+  <dl>
+      <dt><h4>Grapefruit: 100 g</h4></dt>
+      <img src="images/grape.png" alt="" id="img">
+      <dd>Calories: 33 kcal </br>
+          Water: 90.5 g </br>
+          Protein: 0.8 g </br>
+          Carbs: 8.4 g </br>
+          Sugar: 7.3 g </br>
+          Fiber: 1.1 g </br>
+          Fat: 0.1 g</dd>
+    </dl>
+    <hr>
+</li>
+<li>
+  <br id="H">
+  <h2>H</h2>
+  <dl>
+      <dt><h4>Honeydew Melon: 100 g</h4></dt>
+      <img src="images/honey.png" alt="" id="img">
+      <dd>Calories: 36 kcal </br>
+          Protein: 0.5 g </br>
+          Carbs: 9 g </br>
+          Sugar: 8 g </br>
+          Fiber: 0.8 g </br>
+          Fat: 0.1 g</dd>
+    </dl>
+    <hr>
+</li>
+<li>
+  <br id="J">
+  <h2>J</h2>
+  <dl>
+      <dt><h4>Jackfruit: 100 g</h4></dt>
+      <img src="images/jack.png" alt="" id="img">
+      <dd>Calories: 95 kcal </br>
+          Water: 73 g </br>
+          Protein: 0 g </br>
+          Carbs: 13.8 g </br>
+          Sugar: 10.4 g </br>
+          Fiber: 2.4 g </br>
+          Fat: 0.2 g</dd>
+    </dl>
+    <hr>
+</li>
+<li>
+  <br id="K">
+  <h2>K</h2>
+  <dl>
+      <dt><h4>Kiwi: 100 g</h4></dt>
+      <img src="images/kiwi.png" alt="" id="img">
+      <dd>Calories: 63 kcal </br>
+          Water: 82 g </br>
+          Protein: 1 g </br>
+          Carbs: 15.8 g </br>
+          Sugar: 12.3 g </br>
+          Fiber: 1.4 g </br>
+          Fat: 0.2 g</dd>
+    </dl>
+    <hr>
+</li>
+<li>
+  <br id="L">
+  <h2>L</h2>
+  <dl>
+      <dt><h4>Lemon: 100 g</h4></dt>
+      <img src="images/lemon.png" alt="" id="img">
+      <dd>Calories: 29 kcal </br>
+          Protein: 1.1 g </br>
+          Carbs: 9.3 g </br>
+          Sugar: 2.4 g </br>
+          Fiber: 2.8 g </br>
+          Fat: 0.3 g</dd>
+    </dl>
+    <hr>
+</li>
+<li>
+  <br id="M">
+  <h2>M</h2>
+  <dl>
+      <dt><h4>Mango: 100 g</h4></dt>
+      <img src="images/mango.png" alt="" id="img">
+      <dd>Calories: 5602 kcal </br>
+          Protein: 0.8 g </br>
+          Carbs: 15 g </br>
+          Sugar: 13.7 g </br>
+          Fiber: 1.6 g </br>
+          Fat: 0.4 g</dd>
+    </dl>
+    <hr>
+</li>
+<li>
+  <br id="N">
+  <h2>N</h2>
+  <dl>
+      <dt><h4>Nectarine: 100 g</h4></dt>
+      <img src="images/nac.jpg" alt="" id="img">
+      <dd>Calories: 52 kcal </br>
+          Water: 86 g </br>
+          Protein: 0.3 g </br>
+          Carbs: 13.8 g </br>
+          Sugar: 10.4 g </br>
+          Fiber: 2.4 g </br>
+          Fat: 0.2 g</dd>
+    </dl>
+    <hr>
+</li>
+<li>
+  <br id="O">
+  <h2>O</h2>
+  <dl>
+      <dt><h4>Orange: 100 g</h4></dt>
+      <img src="images/Clemantine.jpg" alt="" id="img">
+      <dd>Calories: 52 kcal </br>
+          Water: 86 g </br>
+          Protein: 0.3 g </br>
+          Carbs: 13.8 g </br>
+          Sugar: 10.4 g </br>
+          Fiber: 2.4 g </br>
+          Fat: 0.2 g</dd>
+    </dl>
+    <hr>
+</li>
+<li>
+  <br id="P">
+  <h2>P</h2>
+  <dl>
+      <dt><h4>Pear: 100 g</h4></dt>
+      <img src="images/pear.png" alt="" id="img">
+      <dd>Calories: 52 kcal </br>
+          Water: 86 g </br>
+          Protein: 0.3 g </br>
+          Carbs: 13.8 g </br>
+          Sugar: 10.4 g </br>
+          Fiber: 2.4 g </br>
+          Fat: 0.2 g</dd>
+    </dl>
+    <hr>
+</li>
+<li>
+  <br id="Q">
+  <h2>Q</h2>
+  <dl>
+      <dt><h4>Quince: 100 g</h4></dt>
+      <img src="images/quincd.jpg" alt="" id="img">
+      <dd>Calories: 52 kcal </br>
+          Water: 86 g </br>
+          Protein: 0.3 g </br>
+          Carbs: 13.8 g </br>
+          Sugar: 10.4 g </br>
+          Fiber: 2.4 g </br>
+          Fat: 0.2 g</dd>
+    </dl>
+    <hr>
+</li>
+<li>
+  <br id="R">
+  <h2>R</h2>
+  <dl>
+      <dt><h4>Raspberry: 100 g</h4></dt>
+      <img src="images/rasp.png" alt="" id="img">
+      <dd>Calories: 52 kcal </br>
+          Water: 86 g </br>
+          Protein: 0.3 g </br>
+          Carbs: 13.8 g </br>
+          Sugar: 10.4 g </br>
+          Fiber: 2.4 g </br>
+          Fat: 0.2 g</dd>
+    </dl>
+    <hr>
+</li>
+<li>
+  <br id="S">
+  <h2>S</h2>
+  <dl>
+      <dt><h4>Strawberry: 100 g</h4></dt>
+      <img src="images/straw.png" alt="" id="img">
+      <dd>Calories: 52 kcal </br>
+          Water: 86 g </br>
+          Protein: 0.3 g </br>
+          Carbs: 13.8 g </br>
+          Sugar: 10.4 g </br>
+          Fiber: 2.4 g </br>
+          Fat: 0.2 g</dd>
+    </dl>
+    <hr>
+</li>
+<li>
+  <br id="T">
+  <h2>T</h2>
+  <dl>
+      <dt><h4>Tangerine: 100 g</h4></dt>
+      <img src="images/Tangerine_Transparent_PNG_Clip_Art_Image.png" alt="" id="img">
+      <dd>Calories: 52 kcal </br>
+          Water: 86 g </br>
+          Protein: 0.3 g </br>
+          Carbs: 13.8 g </br>
+          Sugar: 10.4 g </br>
+          Fiber: 2.4 g </br>
+          Fat: 0.2 g</dd>
+    </dl>
+    <hr>
+</li>
+<li>
+  <br id="U">
+  <h2>U</h2>
+  <dl>
+      <dt><h4>Ugni: 100 g</h4></dt>
+      <img src="images/ugli.jpeg" alt="" id="img">
+      <dd>Calories: 52 kcal </br>
+          Water: 86 g </br>
+          Protein: 0.3 g </br>
+          Carbs: 13.8 g </br>
+          Sugar: 10.4 g </br>
+          Fiber: 2.4 g </br>
+          Fat: 0.2 g</dd>
+    </dl>
+    <hr>
+</li>
+<li>
+  <br id="V">
+  <h2>V</h2>
+  <dl>
+      <dt><h4>Voavanga: 100 g</h4></dt>
+      <img src="images/voa.jpg" alt="" id="img">
+      <dd>Calories: 52 kcal </br>
+          Water: 86 g </br>
+          Protein: 0.3 g </br>
+          Carbs: 13.8 g </br>
+          Sugar: 10.4 g </br>
+          Fiber: 2.4 g </br>
+          Fat: 0.2 g</dd>
+    </dl>
+    <hr>
+</li>
+<li>
+  <br id="W">
+  <h2>W</h2>
+  <dl>
+      <dt><h4>Watermelon: 100 g</h4></dt>
+      <img src="images/watermelon_PNG2654.png" alt="" id="img">
+      <dd>Calories: 52 kcal </br>
+          Water: 86 g </br>
+          Protein: 0.3 g </br>
+          Carbs: 13.8 g </br>
+          Sugar: 10.4 g </br>
+          Fiber: 2.4 g </br>
+          Fat: 0.2 g</dd>
+    </dl>
+    <hr>
+</li>
+<li>
+  <br id="X">
+  <h2>X</h2>
+  <dl>
+      <dt><h4>Xigua: 100 g</h4></dt>
+      <img src="images/Xigua.jpg" alt="" id="img">
+          Water: 86 g </br>
+          Protein: 0.3 g </br>
+          Carbs: 13.8 g </br>
+          Sugar: 10.4 g </br>
+          Fiber: 2.4 g </br>
+          Fat: 0.2 g</dd>
+    </dl>
+    <hr>
+</li>
+<li>
+  <br id="Y">
+  <h2>Y</h2>
+  <dl>
+      <dt><h4>Yangmei: 100 g</h4></dt>
+      <img src="images/yang.png" alt="" id="img">
+      <dd>Calories: 52 kcal </br>
+          Water: 86 g </br>
+          Protein: 0.3 g </br>
+          Carbs: 13.8 g </br>
+          Sugar: 10.4 g </br>
+          Fiber: 2.4 g </br>
+          Fat: 0.2 g</dd>
+    </dl>
+    <hr>
+</li>
+<li>
+  <br id="Z">
+  <h2>Z</h2>
+  <dl>
+      <dt>
+        <h4>Zucchini: 100 g</h4></dt>
+        <img src="images/zuch.png" alt="" id="img">
+      <dd>Calories: 52 kcal </br>
+          Water: 86 g </br>
+          Protein: 0.3 g </br>
+          Carbs: 13.8 g </br>
+          Sugar: 10.4 g </br>
+          Fiber: 2.4 g </br>
+          Fat: 0.2 g</dd>
+    </dl>
+    <hr>
+</li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+
+</html>
