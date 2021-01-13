@@ -1,0 +1,42 @@
+form {
+  border: 3px solid #f1f1f1;
+}
+
+input[type="text"], input[type="password"]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+.size {
+  margin: 0px;
+}
+
+.button {
+  background: rgb(43, 111, 41);
+  background: linear-gradient(
+    90deg,
+    rgba(43, 111, 41, 1) 0%,
+    rgba(208, 217, 17, 1) 32%,
+    rgba(227, 104, 18, 1) 100%
+  );
+
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+.grid {
+  padding: 10px;
+  margin: 0px;
+  font-size: 20px;
+}
